@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="MyMusic.Pages.CreateSongPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyMusic.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="230,66,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" />
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="230,102,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="300" PlaceholderText="Please enter name song"/>
+        <TextBlock HorizontalAlignment="Left" Margin="230,284,0,0" Text="Description"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Margin="230,320,0,0"   TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="300" PlaceholderText="Please enter name description"/>
+        <TextBlock HorizontalAlignment="Left" Margin="579,66,0,0" Text="Singer" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSinger" HorizontalAlignment="Left" Margin="579,102,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="300" PlaceholderText="Please enter singer"/>
+        <TextBlock HorizontalAlignment="Left" Margin="579,288,0,0" Text="Author" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAuthour" HorizontalAlignment="Left" Margin="579,320,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="300" PlaceholderText="Please enter name author"/>
+        <TextBlock HorizontalAlignment="Left" Margin="230,161,0,0" Text="Thumbnail" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtThumbnail" HorizontalAlignment="Left" Margin="228,197,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="300" RenderTransformOrigin="0.5,0.5" PlaceholderText="Please enter name thumbnail" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="0.078"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Margin="579,159,0,0" Text="Link" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtLink" HorizontalAlignment="Left" Margin="579,195,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="300" PlaceholderText="Please enter name link"/>
+        <TextBlock HorizontalAlignment="Left" Margin="102,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Create A Song"/><LineBreak/><Run/></TextBlock>
+        <Button Click="Save" Content="Save&#xD;&#xA;" Margin="548,500,0,0" Width="88" Height="40" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="230,380,0,0" Text="Message" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMessage" HorizontalAlignment="Left" Margin="230,417,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="300" PlaceholderText="Please enter name message"/>
+
+    </Grid>
+
+</Page>
